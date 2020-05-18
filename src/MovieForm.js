@@ -10,6 +10,7 @@ class MovieForm extends Component {
       id: new Date(),
       title,
       description,
+      editing: false,
     };
     this.props.dispatch({
       type: "ADD_MOVIE",

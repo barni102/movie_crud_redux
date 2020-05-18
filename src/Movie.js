@@ -6,7 +6,16 @@ class Movie extends Component {
       <div>
         <h2>{this.props.movie.title}</h2>
         <p>{this.props.movie.description}</p>
-        <button>Edit</button>
+        <button
+          onClick={() =>
+            this.props.dispatch({
+              type: "EDIT_MOVIE",
+              id: this.props.movie.id,
+            })
+          }
+        >
+          Edit
+        </button>
         <button
           onClick={() =>
             this.props.dispatch({
