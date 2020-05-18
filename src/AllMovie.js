@@ -8,7 +8,9 @@ class AllMovie extends Component {
   render() {
     return (
       <div>
-        <h1>All Movies</h1>
+        <h1 className="movie_heading" id="all_movie">
+          All Movies
+        </h1>
         {this.props.movies.map((movie) => (
           <div key={movie.id}>
             {movie.editing ? (

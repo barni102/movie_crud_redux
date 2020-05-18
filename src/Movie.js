@@ -3,10 +3,11 @@ import { connect } from "react-redux";
 class Movie extends Component {
   render() {
     return (
-      <div>
-        <h2>{this.props.movie.title}</h2>
-        <p>{this.props.movie.description}</p>
+      <div className="movie">
+        <h2 className="movie_title">{this.props.movie.title}</h2>
+        <p className="movie_description">{this.props.movie.description}</p>
         <button
+          className="edit"
           onClick={() =>
             this.props.dispatch({
               type: "EDIT_MOVIE",
@@ -17,6 +18,7 @@ class Movie extends Component {
           Edit
         </button>
         <button
+          className="delete"
           onClick={() =>
             this.props.dispatch({
               type: "DELETE_MOVIE",

@@ -18,8 +18,9 @@ class EditMovie extends Component {
   };
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleEdit}>
+      <div className="movie">
+        <h1 className="movie_heading">Editing Movie</h1>
+        <form className="form" onSubmit={this.handleEdit}>
           <input
             required
             type="text"
@@ -33,7 +34,7 @@ class EditMovie extends Component {
             required
             rows="5"
             ref={(input) => (this.getDescription = input)}
-            defaultValue={this.props.movie.Description}
+            defaultValue={this.props.movie.description}
             cols="28"
             placeholder="Enter movie"
           />

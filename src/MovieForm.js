@@ -21,9 +21,9 @@ class MovieForm extends Component {
   };
   render() {
     return (
-      <div>
-        <h1>Create Movie</h1>
-        <form onSubmit={this.handleSubmit}>
+      <div className="movie-container">
+        <h1 className="movie_heading">Create Movie</h1>
+        <form className="form" onSubmit={this.handleSubmit}>
           <input
             required
             type="text"
