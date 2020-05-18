@@ -105,7 +105,7 @@ a:hover {
 .movie {
   background: #c28f48;
   width: 50%;
-  height: 190px;
+  height: auto;
   margin: 0 auto;
   padding: 30px;
   margin-bottom: 20px;
@@ -146,11 +146,10 @@ a:hover {
   font-size: 20px;
   padding: 10px 25px;
   border-radius: 20px;
-  margin-right: 10px;
+  margin-left: 10px;
   cursor: pointer;
   outline: none;
   color: #fff;
-  float: right;
 }
 
 .edit {
@@ -161,8 +160,7 @@ a:hover {
   padding: 10px 25px;
   border-radius: 20px;
   cursor: pointer;
-  margin-right: auto;
+  margin-left: 750px;
   outline: none;
   color: #fff;
-  float: right;
 }
